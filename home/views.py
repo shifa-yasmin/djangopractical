@@ -2,8 +2,8 @@ from django.shortcuts import render
 from .form import form_data
 # Create your views here.
 def detials(request):
-    if request.method=="post":
-        form1=form_data(request.post)
+    if request.method=="POST":
+        form1=form_data(request.POST)
         if form1.is_valid():
             name=form1.cleaned_data["name"]
             age=form1.cleaned_data["age"]

@@ -5,13 +5,14 @@
     </head>
     <body>
         <form method="post">
-            {% csrf_tockens %}
-            {{ form.as_p }}
+            {% csrf_token %}
+            {{ form1.as_p }}
             <button type="submit">submit</button>
         </form>
         {% if name %}
         <h1>student detials</h1>
         <h1>name :{{name}}</h1>
         <h1> age :{{age}}</h1>
+        {% endif %}
     </body>
 </html>
