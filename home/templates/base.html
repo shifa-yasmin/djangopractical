@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form method="post">
+            {% csrf_tockens %}
+            {{ form.as_p }}
+            <button type="submit">submit</button>
+        </form>
+        {% if name %}
+        <h1>student detials</h1>
+        <h1>name :{{name}}</h1>
+        <h1> age :{{age}}</h1>
+    </body>
+</html>
