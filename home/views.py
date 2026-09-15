@@ -19,6 +19,11 @@
 #         
 
 
-from django.http import HttpResponse
+from django.shortcuts import render
 def home(request):
-    return HttpResponse("hello shifa yasmin")
+    name="shifa",
+    age=20
+    return render(request,"base.html",{
+        "name":name,
+        "age":age
+    })
