@@ -5,8 +5,15 @@
 # ]
 
 
-from . import views
+# from . import views
+# from django.urls import path
+# urlpatterns=[
+#     path("",views.detials,name="form")
+# ]
+
+
 from django.urls import path
+from .views import home
 urlpatterns=[
-    path("",views.detials,name="form")
+    path("",home)
 ]
