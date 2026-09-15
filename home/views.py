@@ -21,9 +21,7 @@
 
 from django.shortcuts import render
 def home(request):
-    name="shifa",
-    age=20
+    students=["shifa","safa","shahma"]
     return render(request,"base.html",{
-        "name":name,
-        "age":age
+        "students":students
     })
